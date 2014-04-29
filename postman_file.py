@@ -32,5 +32,7 @@ while question != 'no':
             print 'failed to send'
         question = raw_input('do you want me to send another mail? yes/no?\n')
 quit()
-input()
+import platform
+if platform.system()=='Windows':
+    input()
           
